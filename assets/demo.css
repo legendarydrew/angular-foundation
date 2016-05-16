@@ -58,7 +58,7 @@ background-color: #4783A9;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button){
-  background-color: #5592BB!important;
+  background-color: #5592BB;
 }
 
 .top-bar-section li.has-dropdown.not-click>a:not(.button){
@@ -66,7 +66,7 @@ background-color: #4783A9;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
-  background-color: #4783A9!important;
+  background-color: #4783A9;
 }
 
 .top-bar-section ul li>a {
