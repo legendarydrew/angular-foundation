@@ -7,7 +7,7 @@
  * (c) Pinecone, LLC
  */
 angular.module("mm.foundation", ["mm.foundation.tpls", "mm.foundation.accordion","mm.foundation.alert","mm.foundation.bindHtml","mm.foundation.buttons","mm.foundation.position","mm.foundation.mediaQueries","mm.foundation.dropdownToggle","mm.foundation.interchange","mm.foundation.transition","mm.foundation.modal","mm.foundation.offcanvas","mm.foundation.pagination","mm.foundation.tooltip","mm.foundation.popover","mm.foundation.progressbar","mm.foundation.rating","mm.foundation.tabs","mm.foundation.topbar","mm.foundation.tour","mm.foundation.typeahead"]);
-angular.module("mm.foundation.tpls", ["template/accordion/accordion-group.html","template/accordion/accordion.html","template/alert/alert.html","template/modal/backdrop.html","template/modal/window.html","template/pagination/pager.html","template/pagination/pagination.html","template/tooltip/tooltip-html-unsafe-popup.html","template/tooltip/tooltip-popup.html","template/popover/popover.html","template/progressbar/bar.html","template/progressbar/progress.html","template/progressbar/progressbar.html","template/rating/rating.html","template/tabs/tab.html","template/tabs/tabset.html","template/topbar/has-dropdown.html","template/topbar/toggle-top-bar.html","template/topbar/top-bar-dropdown.html","template/topbar/top-bar-section.html","template/topbar/top-bar.html","template/tour/tour.html","template/typeahead/typeahead-match.html","template/typeahead/typeahead-popup.html"]);
+angular.module("mm.foundation.tpls", ["template/accordion/accordion-group.html","template/accordion/accordion.html","template/alert/alert.html","template/modal/backdrop.html","template/modal/window.html","template/pagination/pager.html","template/pagination/pagination.html","template/tooltip/tooltip-html-unsafe-popup.html","template/tooltip/tooltip-popup.html","template/popover/popover.html","template/progressbar/bar.html","template/progressbar/progress.html","template/progressbar/progressbar.html","template/rating/rating.html","template/tabs/tab.html","template/tabs/tabset.html","template/tabs/tabset.html.BACKUP.5992.html","template/tabs/tabset.html.BACKUP.7584.html","template/tabs/tabset.html.BACKUP.9724.html","template/tabs/tabset.html.BACKUP.9820.html","template/tabs/tabset.html.BASE.5992.html","template/tabs/tabset.html.BASE.7584.html","template/tabs/tabset.html.BASE.9724.html","template/tabs/tabset.html.BASE.9820.html","template/tabs/tabset.html.LOCAL.5992.html","template/tabs/tabset.html.LOCAL.7584.html","template/tabs/tabset.html.LOCAL.9724.html","template/tabs/tabset.html.LOCAL.9820.html","template/tabs/tabset.html.REMOTE.5992.html","template/tabs/tabset.html.REMOTE.7584.html","template/tabs/tabset.html.REMOTE.9724.html","template/tabs/tabset.html.REMOTE.9820.html","template/topbar/has-dropdown.html","template/topbar/toggle-top-bar.html","template/topbar/top-bar-dropdown.html","template/topbar/top-bar-section.html","template/topbar/top-bar.html","template/tour/tour.html","template/typeahead/typeahead-match.html","template/typeahead/typeahead-popup.html"]);
 angular.module('mm.foundation.accordion', [])
 
 .constant('accordionConfig', {
@@ -3554,6 +3554,206 @@ angular.module("template/tabs/tabset.html", []).run(["$templateCache", function(
     "    </div>\n" +
     "  </div>\n" +
     "</div>\n" +
+    "");
+}]);
+
+angular.module("template/tabs/tabset.html.BACKUP.5992.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("template/tabs/tabset.html.BACKUP.5992.html",
+    "<div class=\"tabbable\">\n" +
+    "  <dl class=\"tabs\" ng-class=\"{'vertical': vertical}\" ng-transclude></dl>\n" +
+    "  <div class=\"tabs-content\" ng-class=\"{'vertical': vertical}\">\n" +
+    "    <div class=\"content\" \n" +
+    "      ng-repeat=\"tab in tabs\" \n" +
+    "      ng-class=\"{active: tab.active}\">\n" +
+    "      <div tab-content-transclude=\"tab\"></div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("template/tabs/tabset.html.BACKUP.7584.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("template/tabs/tabset.html.BACKUP.7584.html",
+    "<div class=\"tabbable\">\n" +
+    "  <dl class=\"tabs\" ng-class=\"{'vertical': vertical}\" ng-transclude></dl>\n" +
+    "  <div class=\"tabs-content\" ng-class=\"{'vertical': vertical}\">\n" +
+    "    <div class=\"content\" \n" +
+    "      ng-repeat=\"tab in tabs\" \n" +
+    "      ng-class=\"{active: tab.active}\">\n" +
+    "      <div tab-content-transclude=\"tab\"></div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("template/tabs/tabset.html.BACKUP.9724.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("template/tabs/tabset.html.BACKUP.9724.html",
+    "<div class=\"tabbable\">\n" +
+    "  <dl class=\"tabs\" ng-class=\"{'vertical': vertical}\" ng-transclude></dl>\n" +
+    "  <div class=\"tabs-content\" ng-class=\"{'vertical': vertical}\">\n" +
+    "    <div class=\"content\" \n" +
+    "      ng-repeat=\"tab in tabs\" \n" +
+    "      ng-class=\"{active: tab.active}\">\n" +
+    "      <div tab-content-transclude=\"tab\"></div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("template/tabs/tabset.html.BACKUP.9820.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("template/tabs/tabset.html.BACKUP.9820.html",
+    "<div class=\"tabbable\">\n" +
+    "  <dl class=\"tabs\" ng-class=\"{'vertical': vertical}\" ng-transclude></dl>\n" +
+    "  <div class=\"tabs-content\" ng-class=\"{'vertical': vertical}\">\n" +
+    "    <div class=\"content\" \n" +
+    "      ng-repeat=\"tab in tabs\" \n" +
+    "      ng-class=\"{active: tab.active}\">\n" +
+    "      <div tab-content-transclude=\"tab\"></div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("template/tabs/tabset.html.BASE.5992.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("template/tabs/tabset.html.BASE.5992.html",
+    "<div class=\"tabbable\">\n" +
+    "  <dl class=\"tabs\" ng-class=\"{'vertical': vertical}\" ng-transclude></dl>\n" +
+    "  <div class=\"tabs-content\">\n" +
+    "    <div class=\"content\" \n" +
+    "      ng-repeat=\"tab in tabs\" \n" +
+    "      ng-class=\"{active: tab.active}\">\n" +
+    "      <div tab-content-transclude=\"tab\"></div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("template/tabs/tabset.html.BASE.7584.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("template/tabs/tabset.html.BASE.7584.html",
+    "<div class=\"tabbable\">\n" +
+    "  <dl class=\"tabs\" ng-class=\"{'vertical': vertical}\" ng-transclude></dl>\n" +
+    "  <div class=\"tabs-content\">\n" +
+    "    <div class=\"content\" \n" +
+    "      ng-repeat=\"tab in tabs\" \n" +
+    "      ng-class=\"{active: tab.active}\">\n" +
+    "      <div tab-content-transclude=\"tab\"></div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("template/tabs/tabset.html.BASE.9724.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("template/tabs/tabset.html.BASE.9724.html",
+    "<div class=\"tabbable\">\n" +
+    "  <dl class=\"tabs\" ng-class=\"{'vertical': vertical}\" ng-transclude></dl>\n" +
+    "  <div class=\"tabs-content\">\n" +
+    "    <div class=\"content\" \n" +
+    "      ng-repeat=\"tab in tabs\" \n" +
+    "      ng-class=\"{active: tab.active}\">\n" +
+    "      <div tab-content-transclude=\"tab\"></div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("template/tabs/tabset.html.BASE.9820.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("template/tabs/tabset.html.BASE.9820.html",
+    "<div class=\"tabbable\">\n" +
+    "  <dl class=\"tabs\" ng-class=\"{'vertical': vertical}\" ng-transclude></dl>\n" +
+    "  <div class=\"tabs-content\">\n" +
+    "    <div class=\"content\" \n" +
+    "      ng-repeat=\"tab in tabs\" \n" +
+    "      ng-class=\"{active: tab.active}\">\n" +
+    "      <div tab-content-transclude=\"tab\"></div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("template/tabs/tabset.html.LOCAL.5992.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("template/tabs/tabset.html.LOCAL.5992.html",
+    "<div class=\"tabbable\">\n" +
+    "  <dl class=\"tabs\" ng-class=\"{'vertical': vertical}\" ng-transclude></dl>\n" +
+    "  <div class=\"tabs-content\" ng-class=\"{'vertical': vertical}\">\n" +
+    "    <div class=\"content\" \n" +
+    "      ng-repeat=\"tab in tabs\" \n" +
+    "      ng-class=\"{active: tab.active}\">\n" +
+    "      <div tab-content-transclude=\"tab\"></div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("template/tabs/tabset.html.LOCAL.7584.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("template/tabs/tabset.html.LOCAL.7584.html",
+    "<div class=\"tabbable\">\n" +
+    "  <dl class=\"tabs\" ng-class=\"{'vertical': vertical}\" ng-transclude></dl>\n" +
+    "  <div class=\"tabs-content\" ng-class=\"{'vertical': vertical}\">\n" +
+    "    <div class=\"content\" \n" +
+    "      ng-repeat=\"tab in tabs\" \n" +
+    "      ng-class=\"{active: tab.active}\">\n" +
+    "      <div tab-content-transclude=\"tab\"></div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("template/tabs/tabset.html.LOCAL.9724.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("template/tabs/tabset.html.LOCAL.9724.html",
+    "<div class=\"tabbable\">\n" +
+    "  <dl class=\"tabs\" ng-class=\"{'vertical': vertical}\" ng-transclude></dl>\n" +
+    "  <div class=\"tabs-content\" ng-class=\"{'vertical': vertical}\">\n" +
+    "    <div class=\"content\" \n" +
+    "      ng-repeat=\"tab in tabs\" \n" +
+    "      ng-class=\"{active: tab.active}\">\n" +
+    "      <div tab-content-transclude=\"tab\"></div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("template/tabs/tabset.html.LOCAL.9820.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("template/tabs/tabset.html.LOCAL.9820.html",
+    "<div class=\"tabbable\">\n" +
+    "  <dl class=\"tabs\" ng-class=\"{'vertical': vertical}\" ng-transclude></dl>\n" +
+    "  <div class=\"tabs-content\" ng-class=\"{'vertical': vertical}\">\n" +
+    "    <div class=\"content\" \n" +
+    "      ng-repeat=\"tab in tabs\" \n" +
+    "      ng-class=\"{active: tab.active}\">\n" +
+    "      <div tab-content-transclude=\"tab\"></div>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("template/tabs/tabset.html.REMOTE.5992.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("template/tabs/tabset.html.REMOTE.5992.html",
+    "");
+}]);
+
+angular.module("template/tabs/tabset.html.REMOTE.7584.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("template/tabs/tabset.html.REMOTE.7584.html",
+    "");
+}]);
+
+angular.module("template/tabs/tabset.html.REMOTE.9724.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("template/tabs/tabset.html.REMOTE.9724.html",
+    "");
+}]);
+
+angular.module("template/tabs/tabset.html.REMOTE.9820.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("template/tabs/tabset.html.REMOTE.9820.html",
     "");
 }]);
 
